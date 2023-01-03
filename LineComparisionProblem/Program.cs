@@ -41,14 +41,17 @@
 
             double lengthofLine2 = Math.Sqrt(Math.Pow(a2 - a1, 2) + Math.Pow(b2 - b1, 2));
             Console.WriteLine($"\nLength of the Line is {lengthofLine2}");
-
-            if (int.Equals(lengthOfLine1, lengthofLine2)) 
+            if (lengthOfLine1 > lengthofLine2)
             {
-                Console.WriteLine("The two lines are Equals");
+                Console.WriteLine("\nThe Line 1 is greater");
+            }
+            else if (lengthOfLine1 < lengthofLine2)
+            {
+                Console.WriteLine("\nThe Line 2 is greater");
             }
             else
             {
-                Console.WriteLine("The two lines are not equal");
+                Console.WriteLine("\nBoth are Equal");
             }
 
 
